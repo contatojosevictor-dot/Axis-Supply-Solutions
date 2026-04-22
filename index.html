@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Axis Supply Solutions</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Fonte -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #0A2540;
+      color: #fff;
+      margin: 0;
+    }
+
+    /* INTRO */
+    #intro {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: radial-gradient(circle at center, #2F80ED22, transparent);
+      text-align: center;
+    }
+
+    .logo-box {
+      width: 200px;
+      height: 120px;
+      background: linear-gradient(45deg, #2F80ED, #27AE60);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      border-radius: 12px;
+      margin-bottom: 20px;
+    }
+
+    /* BOTÃO */
+    .btn-primary {
+      background: linear-gradient(45deg, #2F80ED, #27AE60);
+      border: none;
+      padding: 12px 28px;
+      border-radius: 8px;
+    }
+
+    /* NAVBAR */
+    .navbar {
+      background: transparent;
+      transition: 0.3s;
+    }
+
+    .navbar.scrolled {
+      background: #0A2540;
+    }
+
+    /* HERO */
+    .hero {
+      padding: 120px 0;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 2.8rem;
+      font-weight: 700;
+    }
+
+    .hero p {
+      color: #B0B7C3;
+    }
+
+    /* SECTIONS */
+    .section {
+      padding: 100px 0;
+    }
+
+    /* CARDS (BALÕES) */
+    .card {
+      background: rgba(255,255,255,0.05);
+      backdrop-filter: blur(10px);
+      border-radius: 16px;
+      padding: 30px;
+      border: 1px solid rgba(255,255,255,0.08);
+      color: #FFFFFF; /* 🔥 CORRIGIDO AQUI */
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+    }
+
+    /* GRADIENT TEXT */
+    .gradient-text {
+      background: linear-gradient(45deg,#2F80ED,#27AE60);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    /* FOOTER */
+    .footer {
+      background: #05070D;
+      padding: 50px 0;
+      color: #777;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- INTRO -->
+<section id="intro">
+  <div class="logo-box">AXIS</div>
+  <h1>Axis Supply Solutions</h1>
+  <p style="color:#B0B7C3">Eficiência, controle e inteligência para sua operação</p>
+  <button onclick="enterSite()" class="btn btn-primary mt-3">Entrar</button>
+</section>
+
+<!-- SITE -->
+<div id="site" style="display:none;">
+
+<nav class="navbar fixed-top navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand text-white fw-bold">Axis</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <h1>Gestão de Supply Chain com <span class="gradient-text">precisão</span></h1>
+    <p>Reduza custos, aumente eficiência e tome decisões com dados</p>
+    <a class="btn btn-primary mt-3">Solicitar demonstração</a>
+  </div>
+</section>
+
+<!-- PROBLEMAS -->
+<section class="section text-center">
+  <div class="container">
+    <h2 class="mb-5">Principais desafios</h2>
+    <div class="row g-4">
+      <div class="col-md-3"><div class="card">Baixa visibilidade de gastos</div></div>
+      <div class="col-md-3"><div class="card">Processos manuais</div></div>
+      <div class="col-md-3"><div class="card">Risco com fornecedores</div></div>
+      <div class="col-md-3"><div class="card">Custos elevados</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- SOLUÇÕES -->
+<section class="section text-center" style="background:#05070D;">
+  <div class="container">
+    <h2 class="mb-5">Soluções</h2>
+    <div class="row g-4">
+      <div class="col-md-3"><div class="card">📊 Análise de dados</div></div>
+      <div class="col-md-3"><div class="card">🤖 Automação</div></div>
+      <div class="col-md-3"><div class="card">🌐 Gestão de fornecedores</div></div>
+      <div class="col-md-3"><div class="card">🚚 Otimização logística</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- RESULTADOS -->
+<section class="section text-center">
+  <div class="container">
+    <h2 class="mb-5">Resultados</h2>
+    <div class="row g-4">
+      <div class="col-md-3"><div class="card">📉 Redução de custos</div></div>
+      <div class="col-md-3"><div class="card">⏱️ Mais eficiência</div></div>
+      <div class="col-md-3"><div class="card">📦 Menos rupturas</div></div>
+      <div class="col-md-3"><div class="card">📈 Melhor negociação</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section text-center">
+  <div class="container">
+    <h2>Pronto para evoluir sua operação?</h2>
+    <a class="btn btn-primary mt-3">Agendar reunião</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer text-center">
+  <h5>Axis Supply Solutions</h5>
+  <p>© 2026</p>
+</footer>
+
+</div>
+
+<!-- JS -->
+<script>
+function enterSite(){
+  document.getElementById('intro').style.display='none';
+  document.getElementById('site').style.display='block';
+}
+
+window.addEventListener('scroll', function() {
+  const navbar = document.querySelector('.navbar');
+  if(navbar) navbar.classList.toggle('scrolled', window.scrollY > 50);
+});
+</script>
+
+</body>
+</html>
